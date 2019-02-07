@@ -1,0 +1,43 @@
+Variable names, meanings, calculations:
+
+
+
+Ticker: Symobol on wall street of company. Classification variable: CL
+Company Name: self-explanatory. CL
+Standard Industry classifier: what industry they belong to. Note: classification variable: CL
+
+IPO pricing
+Offer Price: Final decided value of the IPO. Continuous variable. (Cont)
+Price Range Higher Bound: Highest value they considered before final offering: Cont.
+Price Range Lower Bound: Lowest value considered before final offering: Cont.
+First Day Trading Price: first day closing price. Partial target variable: Cont
+
+IPO characteristics
+Days: difference between before the day company contacts SEC (S-1) and when 424B is 'filed'. Intiger
+Top_Tier Dummy: if rating of underwriter has rating > 8 = 1, else 0. CL
+??Earnings per share: earnings per share over previous time period before the time of the IPO. Cont
+Prior NASDAQ 15-day returns: buy and hold value of the NASDAQ of previous 15 day period prior to IPO: cont:
+Outstanding shares: number of outstanding shares in the IPO. 
+Offering Shares: number of offering shares in the IPO.          Total # of shares = outstanding shares + offering shares
+Sales: trailing annual firm sales (in millions) at the time of IPO: cont
+
+Textual characteristincs of IPO prospectus of MD&A sections. Management Discussions and Analysis: managers discuss performance over last 12 months
+Number of Sentences: # of sentences in MD&A
+Number of Words: # of words in  MD&A
+Number of Real Words: # of textual words in  MD&A
+Number of Long Sentences: number of sentences with > 20 words in MD&A
+Number of long words: number of words with more than 10 letters in the MD&A
+
+Sentiment Characterisitcs of IPO prospectus  MD&A
+Number of positive words: number of positive words in  MD&A, according to L&M dictionary
+number of negative words: number of negative words in  MD&A, according to L&M dictionary
+Number of Uncertain Words:# of uncertain words
+
+Control Variables: NEED CALCULATIONS
+Positive EPS dummy: = 1 IF Earnings per Share is positive at time of IPO; else 0
+C5' Share Overhang: C5' = C5/C6
+C6' Up Revison: (Offer price - middle(P))/middle(P) * 100% IF Offer Price > middle(P), else 0
+
+Target Variables:
+Y1: Pre-IPO Price Revision: = 1 IF offer price < middle(P), where middle(P) = (Price Range Higher Bound + Price Range Lower Bound) / 2, ELSE 0
+Y2 Post-IPO Initial Return: = 1 IF offer price < First Day Trading Price, ELSE 0
