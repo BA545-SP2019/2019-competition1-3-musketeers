@@ -5,7 +5,7 @@ def impute_mean(df):
     import pandas as pd
     
     data = df.apply(lambda x: x.fillna(x.mean()),axis=0)
-    data = data.values
+    
    
     return data
 

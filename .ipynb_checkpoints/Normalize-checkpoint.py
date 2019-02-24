@@ -7,8 +7,8 @@ def minmax_scale(df):
     import pandas as pd
     
     #create a numpy ndarray for use in sklearn
-    df = data.values
+    df = df.values
     scaler = preprocessing.MinMaxScaler()
     dataset_minmax = scaler.fit_transform(df)
-    
+    dataset_minmax = pd.DataFrame(dataset_minmax)
     return dataset_minmax
