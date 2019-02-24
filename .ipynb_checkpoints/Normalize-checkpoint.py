@@ -21,7 +21,7 @@ def z_score(df):
     
     from sklearn import preprocessing
     data = df.values
-    scaler = preprocessing.Normalizer()
+    scaler = preprocessing.StandardScaler()
     
     data_scaled = scaler.fit_transform(data)
     
