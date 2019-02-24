@@ -12,3 +12,19 @@ def minmax_scale(df):
     dataset_minmax = scaler.fit_transform(df)
     dataset_minmax = pd.DataFrame(dataset_minmax)
     return dataset_minmax
+
+
+
+def z_score(df):
+    '''transorm a pandas dataframe using a z-score transformation
+    returns a pandas dataframe'''
+    
+    from sklearn import preprocessing
+    data = df.values
+    scaler = preprocessing.Normalizer()
+    
+    data_scaled = scaler.fit_transform(data)
+    
+    df = pd.DataFrame(data_scaled)
+    
+    return df
