@@ -5,6 +5,7 @@ def configure(filename):
         
         returns: a pandas dataframe with the following changes:
             - replace all '-' with np.nan
+            - convert any negative answers in columns that cannot have negative values into a missing value (such as "T1":"T5", "S1":"S3")
             - drops missing values in the IPO Pricing columns
             - drop ticker and company name
             - calculates the target variables
@@ -12,6 +13,7 @@ def configure(filename):
             - converts textual characteristics columns to ratio columns, as mentioned in the hints
             - fills in missing values in 'I3' with researched values, and converts column I3 into new column called "Bins", which is the industry of the correspontding SIC code
             - one hot encodes the Bins column, and drops the Bins column
+            
             
                 y1: a series of the 1st target variable
                 y2: a series of the 2nd target variable'''
@@ -41,12 +43,18 @@ def configure(filename):
     df.iloc[620, 2] = '5063'
     df.iloc[246, 2] = '8742'
     df.iloc[221, 2] = '7389'
+    
    
     #drop missing values in IPO pricing columns and name/ticker info. Then reset index.
     df = df.replace('-', np.NaN)
     df = df.dropna(subset=['P(IPO)', 'P(H)', 'P(L)', 'P(1Day)'], axis = 0)
     df = df.drop(['I1','I2'], axis = 1)
     df.reset_index(drop=True, inplace = True)
+    
+    #change all negative values into missing
+    columns = ['T1', 'T2', 'T3', 'T4', 'T5', 'S1', 'S2', 'S3']
+    for col in columns:
+        df[col] = np.where(df[col] < 0, np.NaN, df[col])
    
     # calculate target variables Y1 & Y2
     # first, calculate intermediate values and use as columns to dataframe

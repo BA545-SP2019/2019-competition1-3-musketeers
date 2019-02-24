@@ -1,4 +1,4 @@
-def scale(df):
+def minmax_scale(df):
     '''takes in numpy ndarray and returns a normalized dataset through sklearn's min_max scaler.
     returns a fully transformed pandas dataframe.'''
     
