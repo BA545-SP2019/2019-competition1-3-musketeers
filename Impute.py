@@ -1,6 +1,6 @@
 def impute_mean(df):
     '''Takes in a pandas dataframe and imputes a column's mean value into missing values.
-    Returns a numpy ndarray for use in sklearn preprocessing'''
+    Returns a pandas dataframe'''
     
     import pandas as pd
     
