@@ -18,7 +18,7 @@ def minmax_scale(df):
 def z_score(df):
     '''transorm a pandas dataframe using a z-score transformation
     returns a pandas dataframe'''
-    
+    import pandas as pd
     from sklearn import preprocessing
     data = df.values
     scaler = preprocessing.StandardScaler()
