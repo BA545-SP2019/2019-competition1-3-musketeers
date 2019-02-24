@@ -98,7 +98,7 @@ def configure(filename):
     # bin further to reduce number of classes to 3
     df['Bins'] = df['Bins'].replace(['Mining', 'Construction', 'Manufacturing'], 'Manufacturing')
     df['Bins'] = df['Bins'].replace(["Transportation Communications, Electric, Gas and Sanitary service", "Services","Public Administration"], 'Public Services') 
-    df['Bins'] = df['Bins'].replace(['Wholesale Trade', 'Retail Trade', 'Finance, Insurance and Real Estate', 'Agriculture Forestry and Fishing'], 'Other')
+    df['Bins'] = df['Bins'].replace(['Wholesale  Trade', 'Retail Trade', 'Finance, Insurance and Real Estate', 'Agriculture Forestry and Fishing'], 'Other')
               
 
     #One-hot encode 'Bins'
