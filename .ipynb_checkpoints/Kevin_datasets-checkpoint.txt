@@ -1,0 +1,5 @@
+Kevin's Datasets:
+B: impute median, normalize minmax
+
+H: impute median, normalize z-score
+    
