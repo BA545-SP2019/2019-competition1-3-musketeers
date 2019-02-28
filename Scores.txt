@@ -1,12 +1,17 @@
 Score for A:  Y1 = F1 0.6163; AUC 0.6246       |   Y2 = F1 0.5668; AUC 0.5338
 Score for AA: Y1 = F1 0.6016; AUC 0.6061       |   Y2 = F1 0.6226; AUC 0.6090 
-Score for AAAA:  Y1 = F1 0.6469; AUC 0.6503    |   Y2 = F1 0.6201; AUC 0.6073   
+Score for AAAA: Y1 = F1 0.6469; AUC 0.6503 BEST   |   Y2 = F1 0.6201; AUC 0.6073   
 Score for AAA:  Y1 = F1 0.6163; AUC 0.6246     |   Y2 = F1 0.6256; AUC 0.6103  
 Score for A5:  Y1 = F1 0.6244; AUC 0.6254      |   Y2 = F1 0.5868; AUC 0.5627 
-Score for A6:  Y1 = F1 0.6092; AUC 0.6125      |   Y2 = F1 0.6259; AUC 0.6238 
+Score for A6:  Y1 = F1 0.6092; AUC 0.6125      |   Y2 = F1 0.6259; AUC 0.6238 BEST
 Score for A7:  Y1 = F1 0.6168; AUC 0.6161      |   Y2 = F1 0.6231; AUC 0.6067 
 Score for A8:  Y1 = F1 0.6319; AUC 0.6346      |   Y2 = F1 0.6379; AUC 0.6177 
 Score for D:  Y1 =  F1 0.6244; AUC 0.6254      |   Y2 = F1 0.5960; AUC 0.5687 
+Score for D1:  Y1 = F1 0.6163; AUC 0.6246      |   Y2 = F1 0.5547; AUC 0.5212  
+Score for D:  Y1 =        |   Y2 =  
+Score for D:  Y1 =        |   Y2 =  
+Score for D:  Y1 =        |   Y2 =  
+Score for D:  Y1 =        |   Y2 =  
 Score for D:  Y1 =        |   Y2 =  
 Score for B:  Y1: F1 0.6163; AUC 0.6246     |   Y2: F1 0.5739; AUC 0.5457 ,Accuracy of classifier on test set: 0.576, 10-fold cross validation average accuracy of clf1: 0.462
 Score for BB: Y1: F1 F1 0.6163; AUC 0.6246  |   Y2: F1 0.6017; AUC 0.5766
