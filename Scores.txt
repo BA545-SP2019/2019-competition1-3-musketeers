@@ -12,7 +12,7 @@ Score for D2:  Y1 = F1 0.6092; AUC 0.6125      |   Y2 = F1 0.6122; AUC 0.5976
 Score for D4:  Y1 = F1 0.6394; AUC 0.6410      |   Y2 = F1 0.6302; AUC 0.6119 
 Score for D5:  Y1 = F1 0.5942; AUC 0.5969      |   Y2 = F1 0.6137; AUC 0.5988  
 Score for D6:  Y1 = F1 0.6163; AUC 0.6246      |   Y2 = F1 0.6182; AUC 0.5936 
-Score for D:  Y1 =        |   Y2 =  
+Score for D7:  Y1 =        |   Y2 =  
 Score for B:  Y1: F1 0.6163; AUC 0.6246     |   Y2: F1 0.5739; AUC 0.5457 ,Accuracy of classifier on test set: 0.576, 10-fold cross validation average accuracy of clf1: 0.462
 Score for BB: Y1: F1 F1 0.6163; AUC 0.6246  |   Y2: F1 0.6017; AUC 0.5766
 Score for BB2: Y1: F1 0.6243; AUC 0.6282    |   Y2: F1 0.6077; AUC 0.5783
