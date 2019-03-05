@@ -26,3 +26,25 @@ def pca_selection(df, n_component=True, var=False):
     principalDF = pd.DataFrame(principalcomponents)
     
     return principalDF
+
+
+def RFE(df, number, y):
+    '''run the Recursive Feature Elimination to a pandas dataframe.
+    Return a pandas dataframe with the user-specified number of top features as calculated by the RFE algorithm, modeled by a simple Logistic Regression.
+    Need to specify which target variable, y1 or y2, you would like the RFE to model after."
+    '''
+    import pandas as pd
+    from sklearn.feature_selection import RFE
+    from sklearn.linear_model import LogisticRegression
+    
+    model = LogisticRegression()
+    rfe = RFE(model, number)
+    
+    fit = rfe.fit_transform(df, y)
+    fit = pd.DataFrame(fit)
+    
+    
+    return fit
+    return fit.n_features_
+    return fit.support_
+    return fit.ranking_
