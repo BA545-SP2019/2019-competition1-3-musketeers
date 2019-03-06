@@ -1,6 +1,7 @@
 Score for A:  Y1 = F1 0.6163; AUC 0.6246       |   Y2 = F1 0.5668; AUC 0.5338
 Score for AA: Y1 = F1 0.6016; AUC 0.6061       |   Y2 = F1 0.6226; AUC 0.6090 
-Score for AAAA: Y1 = F1 0.6469; AUC 0.6503 BEST   |   Y2 = F1 0.6201; AUC 0.6073   
+Score for AAAA: Y1 = F1 0.6469; AUC 0.6503 BEST   |   Y2 = F1 0.6201; AUC 0.6073 
+Score for AAAA-1: Y1 = F1 0.6301; AUC 0.6460   |   Y2 = F1 0.6393; AUC 0.6069 
 Score for AAA:  Y1 = F1 0.6163; AUC 0.6246     |   Y2 = F1 0.6256; AUC 0.6103  
 Score for A5:  Y1 = F1 0.6244; AUC 0.6254      |   Y2 = F1 0.5868; AUC 0.5627 
 Score for A6:  Y1 = F1 0.6092; AUC 0.6125      |   Y2 = F1 0.6259; AUC 0.6238 BEST
