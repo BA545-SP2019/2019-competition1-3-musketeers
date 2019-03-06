@@ -1,9 +1,11 @@
 Score for A:  Y1 = F1 0.6163; AUC 0.6246       |   Y2 = F1 0.5668; AUC 0.5338
 Score for AA: Y1 = F1 0.6016; AUC 0.6061       |   Y2 = F1 0.6226; AUC 0.6090 
-Score for AAAA: Y1 = F1 0.6469; AUC 0.6503 BEST   |   Y2 = F1 0.6201; AUC 0.6073   
+Score for AAAA: Y1 = F1 0.6469; AUC 0.6503 BEST   |   Y2 = F1 0.6201; AUC 0.6073 
+Score for AAAA-1: Y1 = F1 0.6301; AUC 0.6460   |   Y2 = F1 0.6393; AUC 0.6069 
 Score for AAA:  Y1 = F1 0.6163; AUC 0.6246     |   Y2 = F1 0.6256; AUC 0.6103  
 Score for A5:  Y1 = F1 0.6244; AUC 0.6254      |   Y2 = F1 0.5868; AUC 0.5627 
 Score for A6:  Y1 = F1 0.6092; AUC 0.6125      |   Y2 = F1 0.6259; AUC 0.6238 BEST
+Score for A6-1:  Y1 = F1 0.5662; AUC 0.5919    |   Y2 = F1 0.6259; AUC 0.6238 
 Score for A7:  Y1 = F1 0.6168; AUC 0.6161      |   Y2 = F1 0.6231; AUC 0.6067 
 Score for A8:  Y1 = F1 0.6319; AUC 0.6346      |   Y2 = F1 0.6379; AUC 0.6177 
 Score for D:  Y1 =  F1 0.6244; AUC 0.6254      |   Y2 = F1 0.5960; AUC 0.5687 
@@ -33,3 +35,12 @@ Score for K_tl  Y1 F1 0.5942; AUC 0.5969 | Y2    	F1 0.6164; AUC 0.6101
 Score for H: Y1 =  F1 0.6319; AUC 0.6346, |   Y2: F1 0.6091; AUC 0.5785 
 Accuracy of classifier on test set: 0.583
 10-fold cross validation average accuracy of clf1: 0.567
+
+Score for Kevin1: Y1 F1 0.6768; AUC 0.6845 | Y2: F1 0.6573; AUC 0.6460 ( Binned Days into quantiles, imputed with knn, one-hot encoded them, transformed the continuous variables using log transform, normalized with z-score, RFE with 7 variables)
+Score for Kevin2: Y1 F1 0.6687; AUC 0.6809 | Y2: F1 0.6582; AUC 0.6476  (Binned Days into quantiles, imputed with knn, one-hot encoded them, transformed the continuous variables using log transform, normalized with z-score, RFE with 5 variables)
+
+Score for Kevin3: Y1: F1 0.6842; AUC 0.6937   | Y2: F1 0.6083; AUC 0.5995 (Binned Days into quantiles, imputed with knn, one-hot encoded them, transformed the continuous variables using log transform, normalized with z-score, handled outliers with z-score bound RFE with 7 variables)
+Score for Kevin4: only better for Y2: F1 0.6654; AUC 0.6624 
+
+
+Score for Kevin6: Y1 F1 0.6768; AUC 0.6845 | Y2: F1 0.6529; AUC 0.6335 (Binned Days into quantiles, imputed with knn, one-hot encoded them, transformed the continuous variables using log transform, normalized with z-score, handled outliers with z-score bound,  RFE with 7 variables, pca into 3 variables)
