@@ -22,9 +22,9 @@ To acceess our EDA Report please right-click on link and select open in new brow
   -  Imports standard imports
   - Reads the excel file as a pandas dataframe
   - Replaces the missing SIC codes with values that the group sourced from EDGAR: https://www.sec.gov/edgar/searchedgar/companysearch.html
-  - Replaces &quot;-&quot; with NaN. Drops all Pricing variables where there are missing values(these need to be dropped as the pricing variables are used to calculate the target variables and therefore imputing missing values is inappropriate. We also drop the company name and ticker symbol as these are irrelevant for our models.
+  - Replaces &quot;-&quot; with NaN. Drops all Pricing variables where there are missing values (these need to be dropped as the pricing variables are used to calculate the target variables and therefore imputing missing values is inappropriate). We also drop the company name and ticker symbol as these are irrelevant for our models.
   - Calculate the target variables Y1 and Y2 and control variables
-  - Calculate some ratios based on the S and T variables; we calculated the percentage of long sentences, long words, positive words, negative words and uncertain words
+  - Calculate ratios based on the S and T variables; we calculated the percentage of long sentences, long words, positive words, negative words and uncertain words
   - Binned column I3 (&quot;company sic codes&quot;) initially on the 15 categories per the sec website;
   
 | SIC CODES  |      Industry     |  
