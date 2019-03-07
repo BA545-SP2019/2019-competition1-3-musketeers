@@ -47,10 +47,10 @@ To acceess our EDA Report please right-click on link and select open in new brow
   - Irreleant columns were dropped.(&quot; &#39;Bins&#39;, &#39;p\_mid&#39;, &#39;I3&#39;, &#39;P(IPO)&#39;, &#39;P(H)&#39;, &#39;P(L)&#39;, &#39;P(1Day)&#39;, &#39;fraction&#39;, &#39;C3&#39;, &#39;C5&#39;, &#39;C6&#39;, &#39;T1&#39;, &#39;T2&#39;, &#39;T3&#39;, &#39;T4&#39;, &#39;T5&#39;, &#39;S1&#39;, &#39;S2&#39;, &#39;S3&#39;, &#39;Y1&#39;, &#39;Y2&#39;)
 
 - Modules were built for each step in the data processing stage. These modules allow use to call the steps in any order and also mean the code is reproduceable for each model or pipeline we attempt. The modules are listed below and a brief explanation of the functions within each:
-  - Impute.py – imputes missing values with either the mean or median
-  - imputeUsingBins.py – imputes missing values using the bin mean or bin median
-  - Normalize.py – normalizes the values using the minmax scale method or the Z score method
-  - Transform.py – transforms the values using the square method or log method.
+  - **[Impute](Impute.py)** – imputes missing values with either the mean or median **[Outline](Outline.txt)**
+  - **[ImputeUsingBins](imputeusingbins.py)** – imputes missing values using the SIC bin mean or bin median
+  - **[Normalize](Normalize.py)** – normalizes the values using the minmax scale method or the Z score method
+  - **[Transform](Transform.py)** – transforms the values using the square method or log method.
 
 - Using the models created, the group developed numerous pipelines (link to datasets) to test which order and which functions tended to perform better in general. Each pipeline was tested using the evaluation code provided.
 -
