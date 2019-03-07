@@ -24,9 +24,9 @@
   - Calculate some ratios based on the S and T variables; we calculated the percentage of long sentences, long words, positive words, negative words and uncertain words
   - Binned column I3 (&quot;company sic codes&quot;) initially on the 15 categories per the sec website;
   
-  | SIC CODES  |      Industry     |  
+| SIC CODES  |      Industry     |  
 |----------|-------------|
-| 100-999|  | 	Agriculture, Forestry and Fishing |
+| 100-999|	Agriculture, Forestry and Fishing |
 | 1000-1499 |    Mining  |   
 | 1500-1799| Construction |   
 | 1800-1999| not used |    
