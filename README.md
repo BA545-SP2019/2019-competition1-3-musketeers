@@ -22,11 +22,25 @@
   - Replaces &quot;-&quot; with NaN. Drops all Pricing variables where there are missing values(these need to be dropped as the pricing variables are used to calculate the target variables and therefore imputing missing values is inappropriate. We also drop the company name and ticker symbol as these are irrelevant for our models.
   - Calculate the target variables Y1 and Y2 and control variables
   - Calculate some ratios based on the S and T variables; we calculated the percentage of long sentences, long words, positive words, negative words and uncertain words
-  - Binned column I3 (&quot;company sic codes&quot;) initially on the 15 categories per the sec website. We then reduced this to 3 bins; &quot;Manufacturing&quot;, &quot;public Services&quot; and &quot;Other&quot;. The 3 bins were then &quot;one-hot encoded&quot;
+  - Binned column I3 (&quot;company sic codes&quot;) initially on the 15 categories per the sec website;
   
-  
-  
-  
+  | SIC CODES  |      Industry     |  
+|----------|:-------------:|
+| 100-999|  | 	Agriculture, Forestry and Fishing |
+| 1000-1499 |    Mining  |   
+| 1500-1799| Construction |   
+| 1800-1999| not used |    
+| 2000-3999| Manufacturing|   
+| 4000-4999| Transportation, Communications, Electric, Gas and Sanitary service |  
+| 5000-5199| Wholesale Trade |   
+| 5200-5999| Retail Trade |  
+| 6000-6799| Finance, Insurance and Real Estate |   
+| 7000-8999| Services |  
+| 9100-9729| Public Administration |   
+| 9900-9999| Nonclassifiable | 
+
+ We then reduced this to 3 bins; &quot;Manufacturing&quot;, &quot;public Services&quot; and &quot;Other&quot;. The 3 bins were then &quot;one-hot encoded&quot;
+
   - Irreleant columns were dropped.(&quot; &#39;Bins&#39;, &#39;p\_mid&#39;, &#39;I3&#39;, &#39;P(IPO)&#39;, &#39;P(H)&#39;, &#39;P(L)&#39;, &#39;P(1Day)&#39;, &#39;fraction&#39;, &#39;C3&#39;, &#39;C5&#39;, &#39;C6&#39;, &#39;T1&#39;, &#39;T2&#39;, &#39;T3&#39;, &#39;T4&#39;, &#39;T5&#39;, &#39;S1&#39;, &#39;S2&#39;, &#39;S3&#39;, &#39;Y1&#39;, &#39;Y2&#39;)
 
 - Modules were built for each step in the data processing stage. These modules allow use to call the steps in any order and also mean the code is reproduceable for each model or pipeline we attempt. The modules are listed below and a brief explanation of the functions within each:
