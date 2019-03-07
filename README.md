@@ -48,7 +48,7 @@ To acceess our EDA Report please right-click on link and select open in new brow
 
 - Modules were built for each step in the data processing stage. These modules allow use to call the steps in any order and also mean the code is reproduceable for each model or pipeline we attempt. The modules are listed below and a brief explanation of the functions within each:
   - **[Impute](Impute.py)** – imputes missing values with either the mean or median 
-  - **[ImputeUsingBins](imputeUsingBins.py)** – imputes missing values using the SIC bin mean or bin median
+  - **[ImputeUsingBins](ImputeUsingBins.py)** – imputes missing values using the SIC bin mean or bin median
   - **[Normalize](Normalize.py)** – normalizes the values using the minmax scale method or the Z score method
   - **[Transform](Transform.py)** – transforms the values using the square method or log method.
 
