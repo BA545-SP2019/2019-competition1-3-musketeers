@@ -16,12 +16,12 @@
 
 - After some initial EDA the group attempted to built a &quot;perfect dataset&quot; however, after discussions with Dr. Tao we realised this was not the optimal strategy for this project. We instead should be focusing our efferts on more broad methods that can later be fine tuned owe have a better understanding of the dataset. We also realised by trying to build a &quot;perfect model&quot; from the beginning it was possible we coud ealiy miss a better solution.
 
-To acceess our EDA please right-click on link and select open in new browser tab **[EDA Report](df_profile_report.html)**
+To acceess our EDA Report please right-click on link and select open in new browser tab: **[EDA Report](df_profile_report.html)**
 
 - Thus, the group built a universal &quot;configure Dataset.py&quot; that we can call on the data to set up the dataset the same way at the beginning for each method we wanted to attempt. In summary the configure dataset.py performs the following functions;
   -  Imports standard imports
   - Reads the excel file as a pandas dataframe
-  - Replaces the missing SIC codes with values that the group sourced from Edcar
+  - Replaces the missing SIC codes with values that the group sourced from EDGAR: https://www.sec.gov/edgar/searchedgar/companysearch.html
   - Replaces &quot;-&quot; with NaN. Drops all Pricing variables where there are missing values(these need to be dropped as the pricing variables are used to calculate the target variables and therefore imputing missing values is inappropriate. We also drop the company name and ticker symbol as these are irrelevant for our models.
   - Calculate the target variables Y1 and Y2 and control variables
   - Calculate some ratios based on the S and T variables; we calculated the percentage of long sentences, long words, positive words, negative words and uncertain words
