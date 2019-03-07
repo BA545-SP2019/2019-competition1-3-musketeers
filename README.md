@@ -25,7 +25,7 @@
   - Binned column I3 (&quot;company sic codes&quot;) initially on the 15 categories per the sec website;
   
   | SIC CODES  |      Industry     |  
-|----------|:-------------:|
+|----------|-------------|
 | 100-999|  | 	Agriculture, Forestry and Fishing |
 | 1000-1499 |    Mining  |   
 | 1500-1799| Construction |   
