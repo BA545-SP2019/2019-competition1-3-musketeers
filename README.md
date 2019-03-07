@@ -26,7 +26,9 @@ To acceess our EDA Report please right-click on link and select open in new brow
   - Calculate the target variables Y1 and Y2 and control variables
   - Calculate ratios based on the S and T variables; we calculated the percentage of long sentences, long words, positive words, negative words and uncertain words
   - Binned column I3 (&quot;company sic codes&quot;) initially on the 15 categories per the sec website;
-  
+
+<center>
+
 | SIC CODES  |      Industry     |  
 |----------|-------------|
 | 100-999|	Agriculture, Forestry and Fishing |
