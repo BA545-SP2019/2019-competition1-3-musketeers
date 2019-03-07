@@ -11,7 +11,8 @@
 **Explanation of Work:**
 
 - The Team began the project by examining each of the attributes and getting an understanding of what each one of them meant. Any background knowledge of finance and company listings the group had and google were used to aid our understanding of the data
-  - Link to Outline.txt
+[Outline](Outline.txt)
+
 
 - After some initial EDA the group attempted to built a &quot;perfect dataset&quot; however, after discussions with Dr. Tao we realised this was not the optimal strategy for this project. We instead should be focusing our efferts on more broad methods that can later be fine tuned owe have a better understanding of the dataset. We also realised by tryin build a &quot;perfect model&quot; from the beginning it was possible we coud ealiy miss a better solution.
 
