@@ -16,7 +16,7 @@
 
 - After some initial EDA the group attempted to built a &quot;perfect dataset&quot; however, after discussions with Dr. Tao we realised this was not the optimal strategy for this project. We instead should be focusing our efferts on more broad methods that can later be fine tuned owe have a better understanding of the dataset. We also realised by trying to build a &quot;perfect model&quot; from the beginning it was possible we coud ealiy miss a better solution.
 
-**[EDA Report](df_profile_report.html)**
+To acceess our EDA please right-click on link and select open in new browser tab **[EDA Report](df_profile_report.html)**
 
 - Thus, the group built a universal &quot;configure Dataset.py&quot; that we can call on the data to set up the dataset the same way at the beginning for each method we wanted to attempt. In summary the configure dataset.py performs the following functions;
   -  Imports standard imports
