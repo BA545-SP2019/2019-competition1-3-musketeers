@@ -25,11 +25,13 @@ To acceess our EDA Report please right-click on link and select open in new brow
   - Replaces &quot;-&quot; with NaN. Drops all Pricing variables where there are missing values (these need to be dropped as the pricing variables are used to calculate the target variables and therefore imputing missing values is inappropriate). We also drop the company name and ticker symbol as these are irrelevant for our models.
   - Calculate the target variables Y1 and Y2 and control variables
   - Calculate ratios based on the S and T variables; we calculated the percentage of long sentences, long words, positive words, negative words and uncertain words
-  - Binned column I3 (&quot;company sic codes&quot;) initially on the 15 categories per the sec website;
+  - Binned column I3 (&quot;company sic codes&quot;) initially on the 12 categories per the sec website;
 
-<center>
+<p align="justify">
 
-| SIC CODES  |      Industry     |  
+
+
+|  SIC CODES  |      Industry     |  
 |----------|-------------|
 | 100-999|	Agriculture, Forestry and Fishing |
 | 1000-1499 |    Mining  |   
@@ -44,7 +46,7 @@ To acceess our EDA Report please right-click on link and select open in new brow
 | 9100-9729| Public Administration |   
 | 9900-9999| Nonclassifiable | 
 
-</center>
+</p>
 
  We then reduced this to 3 bins; &quot;Manufacturing&quot;, &quot;public Services&quot; and &quot;Other&quot;. The 3 bins were then &quot;one-hot encoded&quot;
 
