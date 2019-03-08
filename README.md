@@ -53,6 +53,8 @@ To acceess our EDA Report please right-click on link and select open in new brow
   - **[ImputeUsingBins](ImputeUsingBins.py)** – imputes missing values using the SIC bin mean or bin median
   - **[Normalize](Normalize.py)** – normalizes the values using the minmax scale method or the Z score method
   - **[Transform](Transform.py)** – transforms the values using the square method or log method.
-
+  - **[Combine](Combine.py)** - recombines the Dataframe with Y1 and Y2
+  
 - Using the models created, the group developed numerous pipelines (link to datasets) to test which order and which functions tended to perform better in general. Each pipeline was tested using the evaluation code provided.
--
+- The Group devloped 56 models("Pipelines")  based on various methods and in different orders. The scores for each model and a short summary are outlined below:
+
