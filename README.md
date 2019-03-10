@@ -10,7 +10,7 @@
 
 - The Team began the project by examining each of the attributes and getting an understanding of what each one of them meant. Any background knowledge of finance and company listings the group had and google were used to aid our understanding of the data; 
 
-**![](data_dictionary.PNG)**
+**![](img/data_dictionary.PNG)**
 **[Outline](Outline.txt)**
 
 
