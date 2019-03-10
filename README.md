@@ -1,5 +1,3 @@
-# 2019-Competition1
-
 # Charles F. Dolan School of Business
 
 # BA 545 – Data Mining, Competition#1, SP 2019
@@ -66,4 +64,4 @@ To acceess our EDA Report please right-click on link and select open in new brow
 - The Group devloped 56 models ("Pipelines")  based on various methods and in different orders. The scores for each model and a short summary are outlined below:
 
 **[Outline](SummaryResults_03072019.pdf)**
-**[Pic](111.JPG)**
+**![](111.JPG)**
