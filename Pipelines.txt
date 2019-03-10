@@ -1,4 +1,0 @@
-Pipeline     Impute                       Normalize                         Transform
-A            mean for null values         minmax for null values            None
-A1 FAILED          Attempted to normalize using minmax for null values but failed because: ValueError: Input contains NaN, infinity or a value too large for dtype('float64')
-AA           mean for null values         minmax for null values            skew_transform_square for null values

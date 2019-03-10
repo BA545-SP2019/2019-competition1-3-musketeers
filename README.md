@@ -18,7 +18,7 @@
 
 To acceess our EDA Report please right-click on link and select open in new browser tab: **[EDA Report](df_profile_report.html)**
 
-- Thus, the group built a universal &quot;configure Dataset.py&quot; that we can call on the data to set up the dataset the same way at the beginning for each method we wanted to attempt. In summary the configure dataset.py performs the following functions;
+- Thus, the group built a universal &quot;configure Dataset.py&quot; that we can call on the data to set up the dataset the same way at the beginning for each method we wanted to attempt. In summary the configure dataset.py performs the following functions; **[Configure](Configure_Dataset.py)**
   -  Imports standard imports
   - Reads the excel file as a pandas dataframe
   - Replaces the missing SIC codes with values that the group sourced from EDGAR: https://www.sec.gov/edgar/searchedgar/companysearch.html
@@ -58,7 +58,12 @@ To acceess our EDA Report please right-click on link and select open in new brow
   - **[Normalize](Normalize.py)** – normalizes the values using the minmax scale method or the Z score method
   - **[Transform](Transform.py)** – transforms the values using the square method or log method.
   - **[Combine](Combine.py)** - recombines the Dataframe with Y1 and Y2
+  - **[Binning](Binnging.py)** 
+  - **[Feature Selection](Feature_selection.py)** - Apply PCA to a dataset and return the transformed dataset as a pandas dataframe
+  - **[Outliers](Outliers.py)** - Removes outliers and replaces them with either the upper or lower band, the mean or median
   
 - Using the models created, the group developed numerous pipelines (link to datasets) to test which order and which functions tended to perform better in general. Each pipeline was tested using the evaluation code provided.
 - The Group devloped 56 models ("Pipelines")  based on various methods and in different orders. The scores for each model and a short summary are outlined below:
+
 **[Outline](SummaryResults_03072019.pdf)**
+**[Pic](111.JPG)**
