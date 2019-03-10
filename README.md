@@ -94,4 +94,4 @@ Kevin101 was the best performing model based on evaluation over 1000 runs. There
 - Normalize the data to have a mean of 0 and unit variance.
     
 - Feature selection using RFE
-- 
+      --Selecting the 7 best features, and then dropping c6' (column "3") in the evaluation code for Y1.
