@@ -72,6 +72,9 @@ To acceess our EDA Report please right-click on link and select open in new brow
 **[Link To Excel](SummaryofResults.xlsx)**
 
 **Evaluation of Results:**
-The pipelines at the end performed better than the other pipelines, therefore it was decided to rerun Kev1,Kev2 and Kev22 1000 times in the evaulation code. The results were as follows
+
+As our models became more advanced The pipelines at the end performed better than the other pipelines, therefore it was decided to rerun Kev1,Kev2 and Kev22 1000 times in the evaulation code.Link to Evaluation Code:**[Evaluation Code](Evaluation-Code-C.ipynb)**  The results were as follows
 
 **![](img/5.JPG)**
+
+Kevin101 was the best performing model based on evaluation over 1000 runs. Therefore this was selected as our final notebook. 
