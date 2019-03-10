@@ -59,7 +59,7 @@ To acceess our EDA Report please right-click on link and select open in new brow
   - **[Transform](Modules/Transform.py)** – Transforms the values using the square method or log method.
   - **[Combine](Modules/Combine.py)** - Recombines the Dataframe with Y1 and Y2
   - **[Binning](Modules/Binnging.py)** - Bins any of the days columns
-  - **[Feature Selection](Modules/Feature_selection.py)** - Apply PCA to a dataset and return the transformed dataset as a pandas dataframe
+  - **[Feature Selection](Modules/Feature_selection.py)** - Apply PCA or RFE to a dataset and return the transformed dataset as a pandas dataframe
   - **[Outliers](Modules/Outliers.py)** - Removes outliers and replaces them with either the upper or lower band, the mean or median
   
 - Using the models created, the group developed numerous pipelines (link to datasets) to test which order and which functions tended to perform better in general. Each pipeline was tested using the evaluation code provided.
