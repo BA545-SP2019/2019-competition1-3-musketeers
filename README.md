@@ -79,4 +79,19 @@ As our models became more advanced, the pipelines at the end performed better th
 
 Kevin101 was the best performing model based on evaluation over 1000 runs. Therefore this was selected as our final notebook. Link to Notebook : **![Final Notebook](Final_Notebook.ipynb)**
 
-
+***Summary of Final Notebook***
+- Import the Excel file using our Configure_Dataset function
+    As outliner above.
+- Bin column C1 into equal height bins
+    This is an appropiate column to bin as it has a wide range of values
+- Impute missing values using knn
+    Knn is an interesting method to impute missing values as it is based on the idea that a point value can be approximated by the values of the points that are closest to it, based on other variables.
+- Logical ("dummy") variables for C1
+- crete a dataframe of non-binary features
+    Splitting the data between binary and non-binary allows different methods to be used on the datasets
+- Transform the data using the log transform
+    Transform the data using log & e excluding c6' has it has many 0 values
+- Normalize the data to have a mean of 0 and unit variance.
+    
+- Feature selection using RFE
+- 
