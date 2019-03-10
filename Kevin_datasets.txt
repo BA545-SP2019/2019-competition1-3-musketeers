@@ -1,8 +1,0 @@
-Kevin's Datasets:
-B: impute median, normalize minmax
-BB: transform square, impute median, normalize minmax
-BB2: tranform square, impute median, normalize z-score
-BBB: transform log, impute median, normalize minmax
-BBB2: transform log, impute median, normalize z-scre
-H: impute median, normalize z-score
-    
