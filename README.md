@@ -63,7 +63,7 @@ To acceess our EDA Report please right-click on link and select open in new brow
   - **[Outliers](Modules/Outliers.py)** - Removes outliers and replaces them with either the upper or lower band, the mean or median
   
 - Using the models created, the group developed numerous pipelines (link to datasets) to test which order and which functions tended to perform better in general. Each pipeline was tested using the evaluation code provided.
-- The Group devloped 54 workable models ("Pipelines")  based on various methods and in different orders. The scores for each model and a short summary are outlined below:
+- The Group devloped 54 workable models ("Pipelines")  based on various methods and in different orders. The majority of the workbook used are stored in the folder:**[Pipelines](Pipelines)**, while the exported datasets to test can be found in **[Datasets](Datasets)** The scores for each model and a short summary are outlined below:
 
 **![](img/1.JPG)**
 **![](img/2.JPG)**
