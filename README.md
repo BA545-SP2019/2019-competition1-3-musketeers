@@ -9,6 +9,8 @@
 **Explanation of Work:**
 
 - The Team began the project by examining each of the attributes and getting an understanding of what each one of them meant. Any background knowledge of finance and company listings the group had and google were used to aid our understanding of the data; 
+
+**![](data_dictionary.PNG)**
 **[Outline](Outline.txt)**
 
 
@@ -16,7 +18,7 @@
 
 To acceess our EDA Report please right-click on link and select open in new browser tab: **[EDA Report](df_profile_report.html)**
 
-- Thus, the group built a universal &quot;configure Dataset.py&quot; that we can call on the data to set up the dataset the same way at the beginning for each method we wanted to attempt. In summary the configure dataset.py performs the following functions; **[Configure](Configure_Dataset.py)**
+- Thus, the group built a universal &quot;configure Dataset.py&quot; that we can call on the data to set up the dataset the same way at the beginning for each method we wanted to attempt. In summary the configure dataset.py performs the following functions; **[Configure](Modules/Configure_Dataset.py)**
   -  Imports standard imports
   - Reads the excel file as a pandas dataframe
   - Replaces the missing SIC codes with values that the group sourced from EDGAR: https://www.sec.gov/edgar/searchedgar/companysearch.html
@@ -25,7 +27,7 @@ To acceess our EDA Report please right-click on link and select open in new brow
   - Calculate ratios based on the S and T variables; we calculated the percentage of long sentences, long words, positive words, negative words and uncertain words
   - Binned column I3 (&quot;company sic codes&quot;) initially on the 12 categories per the sec website;
 
-<p align="justify">
+
 
 
 
@@ -44,25 +46,32 @@ To acceess our EDA Report please right-click on link and select open in new brow
 | 9100-9729| Public Administration |   
 | 9900-9999| Nonclassifiable | 
 
-</p>
+
 
  We then reduced this to 3 bins; &quot;Manufacturing&quot;, &quot;public Services&quot; and &quot;Other&quot;. The 3 bins were then &quot;one-hot encoded&quot;
 
   - Irreleant columns were dropped.(&quot; &#39;Bins&#39;, &#39;p\_mid&#39;, &#39;I3&#39;, &#39;P(IPO)&#39;, &#39;P(H)&#39;, &#39;P(L)&#39;, &#39;P(1Day)&#39;, &#39;fraction&#39;, &#39;C3&#39;, &#39;C5&#39;, &#39;C6&#39;, &#39;T1&#39;, &#39;T2&#39;, &#39;T3&#39;, &#39;T4&#39;, &#39;T5&#39;, &#39;S1&#39;, &#39;S2&#39;, &#39;S3&#39;, &#39;Y1&#39;, &#39;Y2&#39;)
 
 - Modules were built for each step in the data processing stage. These modules allow use to call the steps in any order and also mean the code is reproduceable for each model or pipeline we attempt. The modules are listed below and a brief explanation of the functions within each:
-  - **[Impute](Impute.py)** – Imputes missing values with either the mean or median 
-  - **[ImputeUsingBins](ImputeUsingBins.py)** – Imputes missing values using the SIC bin mean or bin median
-  - **[Normalize](Normalize.py)** – Normalizes the values using the minmax scale method or the Z score method
-  - **[Transform](Transform.py)** – Transforms the values using the square method or log method.
-  - **[Combine](Combine.py)** - Recombines the Dataframe with Y1 and Y2
-  - **[Binning](Binnging.py)** - 
-  - **[Feature Selection](Feature_selection.py)** - Apply PCA to a dataset and return the transformed dataset as a pandas dataframe
-  - **[Outliers](Outliers.py)** - Removes outliers and replaces them with either the upper or lower band, the mean or median
+  - **[Impute](Modules/Impute.py)** – Imputes missing values with either the mean or median 
+  - **[ImputeUsingBins](Modules/ImputeUsingBins.py)** – Imputes missing values using the SIC bin mean or bin median
+  - **[Normalize](Modules/Normalize.py)** – Normalizes the values using the minmax scale method or the Z score method
+  - **[Transform](Modules/Transform.py)** – Transforms the values using the square method or log method.
+  - **[Combine](Modules/Combine.py)** - Recombines the Dataframe with Y1 and Y2
+  - **[Binning](Modules/Binnging.py)** - Bins any of the days columns
+  - **[Feature Selection](Modules/Feature_selection.py)** - Apply PCA to a dataset and return the transformed dataset as a pandas dataframe
+  - **[Outliers](Modules/Outliers.py)** - Removes outliers and replaces them with either the upper or lower band, the mean or median
   
 - Using the models created, the group developed numerous pipelines (link to datasets) to test which order and which functions tended to perform better in general. Each pipeline was tested using the evaluation code provided.
-- The Group devloped 56 models ("Pipelines")  based on various methods and in different orders. The scores for each model and a short summary are outlined below:
+- The Group devloped 54 workable models ("Pipelines")  based on various methods and in different orders. The scores for each model and a short summary are outlined below:
 
-**[Outline](SummaryResults_03072019.pdf)**
-**![](111.JPG)**
-**![](1112.JPG)**
+**![](img/1.JPG)**
+**![](img/2.JPG)**
+**![](img/3.JPG)**
+**![](img/4.JPG)**
+**[Link To Excel](SummaryofResults.xlsx)**
+
+**Evaluation of Results:**
+The pipelines at the end performed better than the other pipelines, therefore it was decided to rerun Kev1,Kev2 and Kev22 1000 times in the evaulation code. The results were as follows
+
+**![](img/5.JPG)**
