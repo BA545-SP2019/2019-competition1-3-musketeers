@@ -77,4 +77,6 @@ As our models became more advanced, the pipelines at the end performed better th
 
 **![](img/5.JPG)**
 
-Kevin101 was the best performing model based on evaluation over 1000 runs. Therefore this was selected as our final notebook. 
+Kevin101 was the best performing model based on evaluation over 1000 runs. Therefore this was selected as our final notebook. Link to Notebook : **![Final Notebook](Final_Notebook.ipynb)**
+
+
