@@ -73,7 +73,7 @@ To acceess our EDA Report please right-click on link and select open in new brow
 
 **Evaluation of Results:**
 
-As our models became more advanced The pipelines at the end performed better than the other pipelines, therefore it was decided to rerun Kev1,Kev2 and Kev22 1000 times in the evaulation code.Link to Evaluation Code:**[Evaluation Code](Evaluation-Code-C.ipynb)**  The results were as follows
+As our models became more advanced, the pipelines at the end performed better than the other pipelines, therefore it was decided to rerun Kev1,Kev2 and Kev22 1000 times in the evaulation code.Link to Evaluation Code:**[Evaluation Code](Evaluation-Code-C.ipynb)**  The results were as follows
 
 **![](img/5.JPG)**
 
