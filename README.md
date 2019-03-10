@@ -1,5 +1,3 @@
-# 2019-Competition1
-
 # Charles F. Dolan School of Business
 
 # BA 545 – Data Mining, Competition#1, SP 2019
@@ -18,7 +16,7 @@
 
 To acceess our EDA Report please right-click on link and select open in new browser tab: **[EDA Report](df_profile_report.html)**
 
-- Thus, the group built a universal &quot;configure Dataset.py&quot; that we can call on the data to set up the dataset the same way at the beginning for each method we wanted to attempt. In summary the configure dataset.py performs the following functions;
+- Thus, the group built a universal &quot;configure Dataset.py&quot; that we can call on the data to set up the dataset the same way at the beginning for each method we wanted to attempt. In summary the configure dataset.py performs the following functions; **[Configure](Configure_Dataset.py)**
   -  Imports standard imports
   - Reads the excel file as a pandas dataframe
   - Replaces the missing SIC codes with values that the group sourced from EDGAR: https://www.sec.gov/edgar/searchedgar/companysearch.html
@@ -53,12 +51,18 @@ To acceess our EDA Report please right-click on link and select open in new brow
   - Irreleant columns were dropped.(&quot; &#39;Bins&#39;, &#39;p\_mid&#39;, &#39;I3&#39;, &#39;P(IPO)&#39;, &#39;P(H)&#39;, &#39;P(L)&#39;, &#39;P(1Day)&#39;, &#39;fraction&#39;, &#39;C3&#39;, &#39;C5&#39;, &#39;C6&#39;, &#39;T1&#39;, &#39;T2&#39;, &#39;T3&#39;, &#39;T4&#39;, &#39;T5&#39;, &#39;S1&#39;, &#39;S2&#39;, &#39;S3&#39;, &#39;Y1&#39;, &#39;Y2&#39;)
 
 - Modules were built for each step in the data processing stage. These modules allow use to call the steps in any order and also mean the code is reproduceable for each model or pipeline we attempt. The modules are listed below and a brief explanation of the functions within each:
-  - **[Impute](Impute.py)** – imputes missing values with either the mean or median 
-  - **[ImputeUsingBins](ImputeUsingBins.py)** – imputes missing values using the SIC bin mean or bin median
-  - **[Normalize](Normalize.py)** – normalizes the values using the minmax scale method or the Z score method
-  - **[Transform](Transform.py)** – transforms the values using the square method or log method.
-  - **[Combine](Combine.py)** - recombines the Dataframe with Y1 and Y2
+  - **[Impute](Impute.py)** – Imputes missing values with either the mean or median 
+  - **[ImputeUsingBins](ImputeUsingBins.py)** – Imputes missing values using the SIC bin mean or bin median
+  - **[Normalize](Normalize.py)** – Normalizes the values using the minmax scale method or the Z score method
+  - **[Transform](Transform.py)** – Transforms the values using the square method or log method.
+  - **[Combine](Combine.py)** - Recombines the Dataframe with Y1 and Y2
+  - **[Binning](Binnging.py)** - 
+  - **[Feature Selection](Feature_selection.py)** - Apply PCA to a dataset and return the transformed dataset as a pandas dataframe
+  - **[Outliers](Outliers.py)** - Removes outliers and replaces them with either the upper or lower band, the mean or median
   
 - Using the models created, the group developed numerous pipelines (link to datasets) to test which order and which functions tended to perform better in general. Each pipeline was tested using the evaluation code provided.
 - The Group devloped 56 models ("Pipelines")  based on various methods and in different orders. The scores for each model and a short summary are outlined below:
+
 **[Outline](SummaryResults_03072019.pdf)**
+**![](111.JPG)**
+**![](1112.JPG)**
