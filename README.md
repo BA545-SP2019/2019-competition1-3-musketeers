@@ -21,7 +21,7 @@ To acceess our EDA Report please right-click on link and select open in new brow
 - Thus, the group built a universal &quot;configure Dataset.py&quot; that we can call on the data to set up the dataset the same way at the beginning for each method we wanted to attempt. In summary the configure dataset.py performs the following functions; **[Configure](Modules/Configure_Dataset.py)**
   -  Imports standard imports
   - Reads the excel file as a pandas dataframe
-  - Replaces the missing SIC codes with values that the group sourced from EDGAR: https://www.sec.gov/edgar/searchedgar/companysearch.html
+  - Replaces the missing SIC codes with values that the group sourced from EDGAR:. Entites with more than one SIC code were also replaced with the primary SIC again from EDGAR.  https://www.sec.gov/edgar/searchedgar/companysearch.html
   - Replaces &quot;-&quot; with NaN. Drops all Pricing variables where there are missing values (these need to be dropped as the pricing variables are used to calculate the target variables and therefore imputing missing values is inappropriate). We also drop the company name and ticker symbol as these are irrelevant for our models.
   - Calculate the target variables Y1 and Y2 and control variables
   - Calculate ratios based on the S and T variables; we calculated the percentage of long sentences, long words, positive words, negative words and uncertain words
@@ -92,6 +92,6 @@ Kevin101 was the best performing model based on evaluation over 1000 runs. There
 - Transform the data using the log transform
       -- Transform the data using log & e excluding c6' has it has many 0 values
 - Normalize the data to have a mean of 0 and unit variance.
-    
+       -- We often assume our data is normally distributed. However, As we saw in our EDA report much of the data was skewed. Most of our data tended to be right-skewed. Therefore the data was normalized using the Z-score method.
 - Feature selection using RFE
       --Selecting the 7 best features, and then dropping c6' (column "3") in the evaluation code for Y1.
