@@ -18,7 +18,7 @@ Link to our Text file : **[Outline](Outline.txt)**
 
 To acceess our EDA Report please right-click on link and select open in new browser tab: **[EDA Report](df_profile_report.html)**
 
-- Thus, the group built a universal &quot;configure Dataset.py&quot; that we can call on the data to set up the dataset the same way at the beginning for each method we wanted to attempt. In summary the configure dataset.py performs the following functions; **[Configure](Modules/Configure_Dataset.py)**
+- Thus, the group built a universal &quot;configure Dataset.py&quot; that we can call on the data to set up the dataset the same way at the beginning for each pipeline we wanted to attempt. In summary the configure dataset.py performs the following functions; **[Configure](Modules/Configure_Dataset.py)**
   -  Imports standard imports
   - Reads the excel file as a pandas dataframe
   - Replaces the missing SIC codes with values that the group sourced from EDGAR:. Entites with more than one SIC code were also replaced with the primary SIC again from EDGAR.  https://www.sec.gov/edgar/searchedgar/companysearch.html
@@ -89,11 +89,16 @@ Kevin101 was the best performing model based on evaluation over 1000 runs. There
 - Impute missing values using knn
       -- Knn is an interesting method to impute missing values as it is based on the idea that a point value can be approximated by the values of the points that are closest to it, based on other variables.
 - Logical ("dummy") variables for C1
-- crete a dataframe of non-binary features
+- Create a dataframe of non-binary features
       -- Splitting the data between binary and non-binary allows different methods to be used on the datasets
 - Transform the data using the log transform
-      -- Transform the data using log & e excluding c6' has it has many 0 values
+      -- Transform the data using log & e excluding C6', as it has many 0 values
 - Normalize the data to have a mean of 0 and unit variance.
        -- We often assume our data is normally distributed. However, As we saw in our EDA report much of the data was skewed. Most of our data tended to be right-skewed. Therefore the data was normalized using the Z-score method.
 - Feature selection using RFE
       --Selecting the 7 best features, and then dropping c6' (column "3") in the evaluation code for Y1.
+
+
+***Summary of Workload***
+
+Our workload was split fairly evenly. We worked on this project together in person for most of this. Much of the work up to the discussion with Dr. Tao was done together; after the change in staregy, many of the custom modules were built by the group leader, with some additional functions built by Martin. Each member then built as many genaric pipelines as he could, with Stuart building the most number and most of the better performing piplenes. After comparing these models, each member went in and made modifications he believed most useful. In then end, each member put in sufficient effort and made equal contribution, in that not one member was most dominant. 
