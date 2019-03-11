@@ -77,9 +77,9 @@ As our models became more advanced, the pipelines at the end performed better th
 
 **![](img/5.JPG)**
 
-Kevin101 was the best performing model based on evaluation over 1000 runs. Therefore this was selected as our final notebook. Link to Notebook : **![Final Notebook](Final_Notebook.ipynb)**
+Kevin101 was the best performing model based on evaluation over 1000 runs. Therefore this was selected as our final notebook. Link to Notebook : **[Final Notebook](Final_Notebook.ipynb)**
 
-**![Link to Final Dataset from Final Notebook](Datasets/Kevin101.csv)
+**[Link to Final Dataset from Final Notebook](Datasets/Kevin101.csv)
 
 ***Summary of Final Notebook***
 - Import the Excel file using our Configure_Dataset function
